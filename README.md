@@ -1,6 +1,6 @@
-# to_do_app
+# to_do_list_app
 
-A new Flutter project.
+It's an app to write tasks you want to do in specific dates.
 
 ## Getting Started
 
