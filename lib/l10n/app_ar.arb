@@ -16,5 +16,10 @@
 "editDescription" : "تعديل الوصف" ,
 "theTitle" : "العنوان" ,
 "taskDetails" : "تفاصيل المهم" ,
-"saveChanges" : "احفظ التغييرات"
+"saveChanges" : "احفظ التغييرات",
+"tasksList" : "قائمة المهام",
+"taskDetails" : "تفاصيل المهمة",
+"add" : "إضافة",
+"edit" : "تعديل"
+
 }
