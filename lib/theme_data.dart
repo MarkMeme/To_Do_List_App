@@ -27,6 +27,10 @@ class MyThemeData {
           TextStyle(color: redColor, fontWeight: FontWeight.bold, fontSize: 22),
       headline3: TextStyle(
           color: blackColor, fontWeight: FontWeight.bold, fontSize: 22),
+      headline4: TextStyle(
+          color: greyLight, fontWeight: FontWeight.bold, fontSize: 17),
+      headline5: TextStyle(
+          color: blackColor, fontWeight: FontWeight.bold, fontSize: 20),
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
         elevation: 0,
@@ -51,6 +55,10 @@ class MyThemeData {
             color: redColor, fontWeight: FontWeight.bold, fontSize: 22),
         headline3: TextStyle(
             color: whiteColor, fontWeight: FontWeight.bold, fontSize: 22),
+        headline4: TextStyle(
+            color: greyLight, fontWeight: FontWeight.bold, fontSize: 17),
+        headline5: TextStyle( // data select time
+            color: whiteColor, fontWeight: FontWeight.bold, fontSize: 20),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
           elevation: 0,

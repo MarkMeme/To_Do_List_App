@@ -3,6 +3,8 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:to_do_app/home/tasks_tab.dart';
 import 'package:to_do_app/settings_details/settings_tab.dart';
+import 'package:to_do_app/task_details/add_task_bottom_sheet.dart';
+import 'package:to_do_app/theme_data.dart';
 
 import '../providers/AppConfigProvider.dart';
 
@@ -28,22 +30,45 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: tabs[selectedIndex],
-      bottomNavigationBar: Theme(
-        data: Theme.of(context),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          addTaskBottomSheet();
+        },
+        backgroundColor: MyThemeData.primaryLight,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadiusDirectional.circular(30),
+            side: BorderSide(
+                width: 3,
+                color: provider.appTheme == ThemeMode.dark
+                    ? MyThemeData.blackColor
+                    : MyThemeData.whiteColor)),
+        child: Icon(
+          Icons.add_task,
+          size: 30,
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: BottomAppBar(
+        color: provider.appTheme == ThemeMode.dark
+            ? MyThemeData.blackColor
+            : MyThemeData.whiteColor,
+        elevation: 0,
+        shape: const CircularNotchedRectangle(),
+        notchMargin: 8,
         child: BottomNavigationBar(
-          items: const [
+          items: [
             BottomNavigationBarItem(
-                icon: Icon(
+                icon: const Icon(
                   Icons.menu_book,
-                  size: 25,
+                  size: 30,
                 ),
-                label: ''),
+                label: AppLocalizations.of(context)?.tasksList),
             BottomNavigationBarItem(
-                icon: Icon(
+                icon: const Icon(
                   Icons.settings,
-                  size: 25,
+                  size: 30,
                 ),
-                label: '')
+                label: AppLocalizations.of(context)?.settings)
           ],
           onTap: (i) {
             selectedIndex = i;
@@ -52,9 +77,16 @@ class _HomePageState extends State<HomePage> {
           currentIndex: selectedIndex,
         ),
       ),
-
     );
   }
 
   List<Widget> tabs = [TasksTab(), SettingsTab()];
+
+  void addTaskBottomSheet() {
+    showModalBottomSheet(
+      context: context,
+      builder: (context) => AddTaskBottomSheet(),
+      shape: Border.all(width: 5, color: Theme.of(context).primaryColor),
+    );
+  }
 }
