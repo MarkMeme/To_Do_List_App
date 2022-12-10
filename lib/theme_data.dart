@@ -48,13 +48,13 @@ class MyThemeData {
         headline1: TextStyle(
             color: blackColor, fontSize: 22, fontWeight: FontWeight.bold),
         headline2: TextStyle(
-            color: primaryLight, fontWeight: FontWeight.bold, fontSize: 18),
+            color: primaryLight, fontWeight: FontWeight.bold, fontSize: 22),
         subtitle2: TextStyle(
             color: greenColor, fontWeight: FontWeight.bold, fontSize: 18),
         subtitle1: TextStyle(
             color: redColor, fontWeight: FontWeight.bold, fontSize: 22),
         headline3: TextStyle(
-            color: whiteColor, fontWeight: FontWeight.bold, fontSize: 22),
+            color: whiteColor, fontWeight: FontWeight.bold, fontSize: 18),
         headline4: TextStyle(
             color: greyLight, fontWeight: FontWeight.bold, fontSize: 17),
         headline5: TextStyle( // data select time

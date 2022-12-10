@@ -1,5 +1,6 @@
 import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
+import 'package:to_do_app/task_details/task_item.dart';
 
 import '../theme_data.dart';
 
@@ -30,6 +31,10 @@ class _TasksTabState extends State<TasksTab> {
             selectableDayPredicate: (date) => true,
             locale: 'en_ISO',
           ),
+          Expanded(child: ListView.builder(
+            itemBuilder: (context,index) { return TaskItem();},
+            itemCount: 1,
+          ))
         ],
       ),
     );
