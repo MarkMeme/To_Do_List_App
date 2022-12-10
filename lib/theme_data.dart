@@ -24,7 +24,7 @@ class MyThemeData {
       subtitle2: TextStyle(
           color: greenColor, fontWeight: FontWeight.bold, fontSize: 18),
       subtitle1:
-          TextStyle(color: redColor, fontWeight: FontWeight.bold, fontSize: 22),
+      TextStyle(color: redColor, fontWeight: FontWeight.bold, fontSize: 22),
       headline3: TextStyle(
           color: blackColor, fontWeight: FontWeight.bold, fontSize: 22),
       headline4: TextStyle(

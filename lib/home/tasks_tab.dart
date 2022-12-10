@@ -30,7 +30,6 @@ class _TasksTabState extends State<TasksTab> {
             selectableDayPredicate: (date) => true,
             locale: 'en_ISO',
           ),
-
         ],
       ),
     );
