@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
-import 'package:to_do_app/home/tasks_tab.dart';
+import 'package:to_do_app/task_details/tasks_tab.dart';
 import 'package:to_do_app/settings_details/settings_tab.dart';
 import 'package:to_do_app/task_details/add_task_bottom_sheet.dart';
 import 'package:to_do_app/theme_data.dart';

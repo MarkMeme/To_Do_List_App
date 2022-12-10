@@ -17,15 +17,11 @@ class _AddTaskBottomSheetState extends State<AddTaskBottomSheet> {
   Widget build(BuildContext context) {
     var provider = Provider.of<AppConfigProvider>(context);
     return Container(
-      foregroundDecoration: BoxDecoration(
-
-      ),
-      padding:EdgeInsets.all(18),
+      foregroundDecoration: BoxDecoration(),
+      padding: EdgeInsets.all(18),
       color: provider.appTheme == ThemeMode.dark
           ? MyThemeData.blackColor
           : MyThemeData.whiteColor,
-
-
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -56,25 +52,30 @@ class _AddTaskBottomSheetState extends State<AddTaskBottomSheet> {
                     hintText: AppLocalizations.of(context)!.enterYourTask,
                     hintStyle: Theme.of(context).textTheme.headline4),
               ),
-              Divider(thickness: 2,color: Colors.white,),
+              Divider(
+                thickness: 2,
+                color: Colors.white,
+              ),
               const SizedBox(
                 height: 7,
               ),
               TextFormField(
                 decoration: InputDecoration(
-                    border:  UnderlineInputBorder(
+                    border: UnderlineInputBorder(
                         borderSide: BorderSide(
-                              color: provider.appTheme == ThemeMode.light
-                                  ? MyThemeData.blackColor
-                                  : MyThemeData.whiteColor,
-                            )),
+                      color: provider.appTheme == ThemeMode.light
+                          ? MyThemeData.blackColor
+                          : MyThemeData.whiteColor,
+                    )),
                     hintText: AppLocalizations.of(context)!.editDescription,
                     hintStyle: Theme.of(context).textTheme.headline4),
                 maxLines: 4,
                 minLines: 2,
               ),
-              Divider(thickness: 2,color: Colors.white,),
-
+              Divider(
+                thickness: 2,
+                color: Colors.white,
+              ),
             ],
           )),
           const SizedBox(
