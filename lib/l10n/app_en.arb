@@ -16,6 +16,10 @@
 "editDescription" : "Edit Description" ,
 "theTitle" : "The Title" ,
 "taskDetails" : "Task Details" ,
-"saveChanges" : "Save Changes"
+"saveChanges" : "Save Changes",
+"tasksList" : "Tasks List",
+"taskDetails" : "Task Details",
+"add" : "Add",
+"edit" : "Edit"
 
 }
